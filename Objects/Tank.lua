@@ -1,10 +1,6 @@
 local BattleGroundEnemies = BattleGroundEnemies
 local addonName, Data = ...
 BattleGroundEnemies.Objects.Tank = {}
-print("tank")
-function BattleGroundEnemies.Objects.Tank.P()
-	print("yes")
-end
 
 function BattleGroundEnemies.Objects.Tank.New(playerButton)
 				-- trinket
@@ -44,10 +40,6 @@ function BattleGroundEnemies.Objects.Tank.New(playerButton)
 		
 		if not config.Tank_Enabled then return end
 		local insi = playerButton.Trinket
-		
---		if Data.TankSpellIDtoCooldownTrigger[spellID] and not insi.HasTrinket == 4 and insi.Cooldown:GetCooldownDuration() < Data.TankSpellIDtoCooldownTrigger[spellID] * 1000 then
---			insi.Cooldown:SetCooldown(GetTime(), Data.TankSpellIDtoCooldownTrigger[spellID])
---		end
 		
 		if config.TankFiltering_Enabled and not config.TankFiltering_Filterlist[spellID] then return end
 		
