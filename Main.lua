@@ -1517,7 +1517,7 @@ do
 			
 			-- RACIALS
 			playerButton.Racial = BattleGroundEnemies.Objects.Racial.New(playerButton)
-			--BattleGroundEnemies.Objects.Tank.P()
+
 			playerButton.Tank = BattleGroundEnemies.Objects.Tank.New(playerButton)		
 			-- Objective and respawn
 			playerButton.ObjectiveAndRespawn = BattleGroundEnemies.Objects.ObjectiveAndRespawn.New(playerButton)
